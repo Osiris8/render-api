@@ -5,7 +5,7 @@ const port = process.env.PORT || 5000;
 
 app.use(cors()); // Active CORS
 const corsOptions = {
-  origin: "http://localhost:3000", // Remplacez par le domaine de votre frontend
+  origin: "https://render-ai-s9wf.onrender.com", // Remplacez par le domaine de votre frontend
   optionsSuccessStatus: 200, // Pour répondre avec le statut 200 pour les requêtes préflight
 };
 
