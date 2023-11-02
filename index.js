@@ -6,11 +6,7 @@ require("dotenv").config({ path: ".env.local" });
 
 app.use(cors()); // Active CORS
 const corsOptions = {
-  origin: [
-    "https://render-ai-c134.onrender.com",
-    "http://localhost:3000",
-    "https://render-ai-orpin.vercel.app",
-  ], // Remplacez par le domaine de votre frontend
+  origin: ["http://localhost:3000", "https://render-ai-orpin.vercel.app"], // Remplacez par le domaine de votre frontend
   optionsSuccessStatus: 200, // Pour répondre avec le statut 200 pour les requêtes préflight
 };
 
@@ -60,3 +56,5 @@ async function main() {
     console.log(err);
   }
 }
+
+/**************ChatGPT Integration */
